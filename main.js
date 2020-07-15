@@ -18,6 +18,13 @@ function getResults(query) {
     })
     .then(displayResults);
 }
+function startResults() {
+  fetch(`${api.base}weather?q=winnipeg&units=metric&APPID=${api.key}`)
+    .then((weather) => {
+      return weather.json();
+    })
+    .then(displayResults);
+}
 function displayResults(weather) {
   let city = document.querySelector(".location .city");
   city.innerText = `${weather.name}, ${weather.sys.country}`;
