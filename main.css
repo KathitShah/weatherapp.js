@@ -49,6 +49,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 .location .city {
   color: #fff;
