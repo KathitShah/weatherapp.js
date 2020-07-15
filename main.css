@@ -65,8 +65,7 @@ main {
 }
 .location .dates {
   color: #fff;
-  font-size: 16px;
-  padding-left: 0.2rem;
+  font-size: 22px;
 }
 .current .temp {
   color: #fff;
